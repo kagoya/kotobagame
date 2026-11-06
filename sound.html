@@ -4,13 +4,17 @@
 <p class="note">カードを めくると、その おとが なります。</p>
 <details class="note"><summary>音源の出典・クレジット</summary>
 <p>原田英語「英語の先生の玉手箱」の配布音源を使用しています。<a href="https://github.com/kagoya/kotobagame/blob/main/assets/sounds/CREDITS.md">録音者・出典・ライセンスの一覧</a></p>
-</details></section></main><script src="./score-stars.js"></script><script src="./celebration.js"></script><script>
+</details></section></main><script id="scoreStarsScript" src="./score-stars.js" defer></script><script src="./celebration.js" defer></script><script>
 const scoreKey="hiragana-games-total-score-v1";
-const queueScoreStars=createScoreStars(document.getElementById("scoreStars"),()=>{
-  try {
-    const score=Number(localStorage.getItem(scoreKey));
-    return Number.isSafeInteger(score)&&score>=0?score:0;
-  } catch {return 0}
+let queueScoreStars=()=>{};
+document.getElementById("scoreStarsScript").addEventListener("load",()=>{
+  if(typeof window.createScoreStars!=="function")return;
+  queueScoreStars=window.createScoreStars(document.getElementById("scoreStars"),()=>{
+    try {
+      const score=Number(localStorage.getItem(scoreKey));
+      return Number.isSafeInteger(score)&&score>=0?score:0;
+    } catch {return 0}
+  });
 });
 window.addEventListener("storage",event=>{if(event.key===scoreKey)queueScoreStars()});
 const DATA={
