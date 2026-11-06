@@ -4,7 +4,7 @@ function showCelebration(emojis,count=22,host=document.body){
   overlay.id='celebrationOverlay';
   overlay.className='celebration-overlay';
   overlay.setAttribute('aria-hidden','true');
-  overlay.innerHTML='<svg class="hanamaru" viewBox="0 0 120 120"><circle cx="60" cy="60" r="55" fill="#fffaf0"/><g fill="none" stroke="#e44755" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M48 21Q60 4 72 21Q90 13 94 33Q113 35 107 55Q120 68 103 80Q104 100 84 100Q73 117 59 105Q42 116 33 99Q13 99 15 79Q0 66 13 54Q7 35 26 32Q30 13 48 21Z"/><circle cx="60" cy="62" r="29"/><circle cx="60" cy="62" r="20"/></g></svg>';
+  overlay.innerHTML='<svg class="hanamaru" viewBox="0 0 120 120" aria-hidden="true"><g fill="none" stroke-linecap="round" stroke-linejoin="round"><defs><path id="hanamaru-ink" d="M55 28C44 4 22 12 27 35C5 26 1 52 24 59C2 69 11 92 33 83C23 106 46 115 56 94C62 118 88 110 86 88C108 98 118 73 96 63C120 53 110 29 89 37C95 13 70 5 62 27 M63 59C55 54 48 62 52 69C57 79 75 76 78 63C82 49 70 40 56 42C43 44 34 54 36 69C39 84 53 90 67 86C81 82 90 72 92 59"/></defs><use href="#hanamaru-ink" stroke="#fff8eb" stroke-width="11"/><use href="#hanamaru-ink" stroke="#e02b41" stroke-width="6"/></g></svg>';
   for(let i=0;i<count;i++){
     const particle=document.createElement('span');
     particle.className='confetti';
