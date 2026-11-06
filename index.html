@@ -28,6 +28,108 @@
 
 body{position:relative}#homeStars{position:absolute;top:0;left:0;z-index:0;pointer-events:none;display:block}body>header,body>main,body>nav,body>.site-footer{position:relative;z-index:1}
 header button.soft{color:#293c45}
+/* Use the same play area on phones and portrait tablets. */
+@media (orientation:portrait) {
+  body>header, body>main, body>nav, body>.site-footer {max-width:590px}
+  body>header {padding:8px 12px 5px;gap:8px;align-items:center}
+  body>header h1 {font-size:clamp(22px,5.5vw,30px);margin:0}
+  .brand-home {font-size:13px;padding:3px 0}
+  .current-game-title {font-size:13px;margin:0}
+  .header-controls {gap:5px;flex-wrap:nowrap}
+  .total-score {--score-base:15px;padding:4px 7px}
+  .header-controls .soft {padding:4px 7px;min-height:36px;font-size:12px}
+  body>main {padding:0 10px 12px}
+  .game-nav {display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:4px;padding:4px 10px 8px}
+  .game-nav a {display:grid;place-items:center;text-align:center;padding:4px 2px;min-height:44px;font-size:11px;line-height:1.25;border-radius:11px;overflow-wrap:anywhere}
+  .home-intro {padding:8px 0 10px}
+  .home-intro h2 {font-size:22px;margin:0}
+  .home-intro p {font-size:14px;margin:4px 0}
+  .home-menu {gap:8px}
+  .home-choice {min-height:61px;padding:7px 12px;gap:10px;border-radius:15px;border-bottom-width:4px}
+  .home-icon {font-size:29px;line-height:1.15}
+  .home-copy strong {font-size:17px}
+  .home-copy small {font-size:12px;margin:2px 0 0}
+  #homePage .home-menu + .home-menu {margin-top:12px!important}
+  .site-footer {margin-top:6px;padding:6px 10px 12px}
+  .play {padding:9px;border-radius:16px}
+  .top,.fill-top {gap:5px;margin:0 0 6px}
+  .level-picker {gap:4px 6px;font-size:13px}
+  .level-picker select {padding:4px;min-height:36px;max-width:100%;border-radius:9px}
+  .badge,.fill-count {padding:4px 7px;font-size:13px}
+  .tools {gap:5px;margin:6px 0 0}
+  .tools button,.section-title button,#findNew,#traceNext {min-height:44px;padding:4px 7px;font-size:13px;border-radius:10px}
+  .status {font-size:14px;min-height:0;margin:5px 0;padding:5px 7px;line-height:1.4}
+  .section-title {margin:9px 0 5px;gap:5px}
+  .section-title h2,.fill-title,.goal h2,#rowHeading {font-size:17px;margin:0}
+  body>main>footer,.trace-caption,.row-note {font-size:12px;line-height:1.45;margin:8px 0}
+
+  #shiriPage .help {display:none}
+  .chain {flex-wrap:wrap;justify-content:center;gap:4px;min-height:70px;overflow:visible;padding:4px}
+  .chain .mini {flex:0 0 calc((100% - 16px)/5);min-width:0;padding:2px;border-radius:9px}
+  .chain .mini span {font-size:24px;line-height:1}
+  .chain .mini b {font-size:12px;overflow-wrap:anywhere}
+  .chain .arrow {display:none}
+  .chain .empty {font-size:14px;padding:8px}
+  .remaining .number {font-size:62px}
+  #cards {grid-template-columns:repeat(5,minmax(0,1fr));gap:5px}
+  #cards .card {min-width:0;min-height:72px;padding:5px 1px 3px;border-radius:11px;border-bottom-width:4px}
+  #cards .picture {font-size:clamp(27px,7vw,43px);margin-bottom:2px}
+  #cards .word {font-size:clamp(12px,3.1vw,16px);letter-spacing:0;overflow-wrap:anywhere}
+  #cards .speaker {font-size:11px;right:3px;top:1px}
+
+  .picture-stage {padding:4px}
+  .big-picture {font-size:clamp(76px,21vw,116px);line-height:1.1}
+  .fill-slots {gap:4px;margin:7px 0}
+  .letter-slot {width:min(13vw,62px);height:54px;font-size:29px;border-radius:11px}
+  .fill-title {margin-top:8px}
+  .fill-choices {gap:5px;margin:6px auto}
+  .kana-card {min-height:50px;font-size:27px;border-radius:11px}
+
+  #tracePage .fill-top .fill-count {display:none}
+  .trace-layout {display:grid;grid-template-columns:minmax(0,2.15fr) minmax(0,1fr);gap:7px;align-items:center}
+  .trace-board {width:100%;border-radius:13px}
+  .trace-side {min-width:0;width:auto;max-width:none}
+  .trace-side h2 {font-size:17px;margin:0}
+  .trace-side p {font-size:13px;margin:4px 0}
+  .trace-side .tools {display:grid;grid-template-columns:1fr;gap:3px}
+  .trace-side .tools button {min-height:36px;padding:3px;font-size:12px}
+  .trace-example,.trace-example:has(.number-pictures) {width:100%;min-width:0;max-width:none;margin:5px 0;padding:4px;border-radius:11px}
+  .trace-example .example-emoji {font-size:33px}
+  .trace-example .example-word {font-size:15px;letter-spacing:0;margin:2px 0}
+  .trace-example .example-note {font-size:10px;line-height:1.2}
+  .trace-word-progress {gap:4px;margin:0 0 4px}
+  .trace-word-cell {width:41px;height:42px;font-size:24px;border-radius:9px}
+  .trace-word-note {font-size:12px;margin:4px 0}
+  .number-pictures {gap:0;font-size:clamp(15px,4vw,25px);padding:0}
+  .number-zero {height:40px;font-size:25px}
+
+  .row-board {grid-template-columns:minmax(0,1fr) 14px minmax(0,1.45fr);gap:4px;margin:5px auto}
+  .row-column {gap:4px}
+  .row-column-title {font-size:13px;margin:0 0 2px}
+  .row-card,.row-slot {height:55px;padding:3px;gap:3px;border-radius:10px}
+  .row-card .row-letter,.row-slot .row-letter {font-size:27px}
+  .row-card .row-letter.row-syllable,.row-slot .row-letter.row-syllable {font-size:21px}
+  .row-card .row-picture,.row-slot .row-picture {font-size:28px;margin-left:2px}
+  .row-slot .row-word {font-size:12px;overflow-wrap:anywhere}
+  .row-arrows {padding-top:26px;font-size:14px}
+  #rowHeading {margin-bottom:4px!important}
+
+  #findPage .play {display:grid;gap:4px}
+  #findPage .tools {margin:0}
+  #findPage .status {margin:0}
+  .find-workspace {grid-template-columns:minmax(0,1fr) minmax(58px,24%);gap:4px}
+  .find-build {min-height:47px;padding:3px;gap:3px;border-radius:10px}
+  .find-selected {width:34px;height:42px;font-size:23px;border-radius:8px}
+  .find-result {min-height:47px;padding:3px;border-radius:10px}
+  .find-result-emoji {font-size:27px}
+  .find-result-word {font-size:13px;margin-top:1px;overflow-wrap:anywhere}
+  .find-scatter {grid-template-columns:repeat(7,minmax(0,1fr));gap:4px;padding:8px 2px 3px}
+  .find-tile {min-width:0;min-height:44px;padding:1px;font-size:23px;border-radius:9px;border-bottom-width:3px}
+  .find-count {font-size:14px;margin:5px 0 3px}
+  .find-album {gap:3px}
+  .find-found,.find-found.mystery {min-width:43px;min-height:42px;padding:2px 4px;border-radius:8px;font-size:11px}
+  .find-found .find-silhouette,.find-found .find-question,.find-found .find-found-emoji {font-size:20px;margin:0}
+}
 </style>
 <canvas id="homeStars" hidden aria-hidden="true"></canvas><header><div><a class="brand brand-home" id="brandHome" href="#home">🏠 あそびを えらぶ</a><h1>ことばゲーム</h1><p class="current-game-title" id="currentGameTitle" hidden></p></div><div class="header-controls"><span class="total-score" id="totalScore" role="status" aria-live="polite">⭐ 0てん</span><button class="soft" id="sound" aria-pressed="true">🔊 おと あり</button></div></header><p class="score-save-note" id="scoreSaveNote" hidden role="status">この ぶらうざでは てんすうを ほぞんできないよ</p>
 <nav class="game-nav" id="gameNav" aria-label="あそびを えらぶ"><a href="#junban" id="navRow">🌈 ごじゅうおん ならべ</a><a href="#anaume" id="navFill">🧩 ことば あなうめ</a><a href="#shiritori" id="navShiri">🌷 しりとり</a><a href="#nazori" id="navTrace">✍️ もじと すうじ なぞり</a><a href="#mitsuke" id="navFind">🔎 ことば みっけ</a></nav><main id="homePage" hidden><section class="home-intro"><h2>きょうは なにで あそぶ？</h2><p>すきな あそびを えらんでね 🌱</p></section><div class="home-menu"><a class="home-choice" href="#junban"><span class="home-icon" aria-hidden="true">🌈</span><span class="home-copy"><strong>ごじゅうおん ならべ</strong><small>あいうえおを じゅんばんに ならべよう</small></span><span class="home-arrow" aria-hidden="true">→</span></a><a class="home-choice" href="#anaume"><span class="home-icon" aria-hidden="true">🧩</span><span class="home-copy"><strong>ことば あなうめ</strong><small>○に はいる もじを みつけよう</small></span><span class="home-arrow" aria-hidden="true">→</span></a><a class="home-choice" href="#shiritori"><span class="home-icon" aria-hidden="true">🌷</span><span class="home-copy"><strong>しりとり</strong><small>ことばを つないで あそぼう</small></span><span class="home-arrow" aria-hidden="true">→</span></a><a class="home-choice" href="#nazori"><span class="home-icon" aria-hidden="true">✍️</span><span class="home-copy"><strong>もじと すうじ なぞり</strong><small>ゆびで なぞって かいてみよう</small></span><span class="home-arrow" aria-hidden="true">→</span></a><a class="home-choice" href="#mitsuke"><span class="home-icon" aria-hidden="true">🔎</span><span class="home-copy"><strong>ことば みっけ</strong><small>ちらばった もじで ことばを つくろう</small></span><span class="home-arrow" aria-hidden="true">→</span></a></div><section class="home-menu" style="margin-top:24px"><a class="home-choice" href="#tanken-list"><span class="home-copy"><strong>ことばたんけん</strong></span></a></section></main><main id="tankenList" hidden><section class="home-intro"><h2>ことばたんけん</h2><p>すきな ばめんを えらんでね</p></section><section class="home-menu" aria-label="ことばたんけん"><a class="home-choice" href="#tanken"><span class="home-icon" aria-hidden="true">🎒</span><span class="home-copy"><strong>がっこうの したく</strong><small>きいて、えらんで、うごかそう</small></span><span class="home-arrow" aria-hidden="true">→</span></a><a class="home-choice" href="#tanken-kitchen"><span class="home-icon" aria-hidden="true">🥄</span><span class="home-copy"><strong>ごはんの じかん</strong><small>ごはんや おやつの したくを しよう</small></span><span class="home-arrow" aria-hidden="true">→</span></a><a class="home-choice" href="#tanken-home"><span class="home-icon" aria-hidden="true">🧼</span><span class="home-copy"><strong>おうちの したく</strong><small>てを あらって、おもちゃを かたづけよう</small></span><span class="home-arrow" aria-hidden="true">→</span></a><a class="home-choice" href="#tanken-town"><span class="home-icon" aria-hidden="true">🚌</span><span class="home-copy"><strong>まちへ おでかけ</strong><small>のりものや しんごうを さがそう</small></span><span class="home-arrow" aria-hidden="true">→</span></a></section></main><main id="tankenPage" hidden><template id="tankenSource">&lt;!doctype html&gt;
@@ -63,6 +165,23 @@ progress{width:100%;accent-color:#407856;height:16px}.cards{display:grid;grid-te
 .art.group{font-size:clamp(22px,6vw,60px)}
 .moving{width:clamp(86px,19vw,160px)}
 .sample{font-size:clamp(48px,12vw,104px)}
+
+@media (orientation:portrait) {
+  main{padding:6px}
+  h1{font-size:clamp(24px,6vw,32px);margin:5px 0 1px}
+  .sub{margin:0 0 7px}
+  .panel{padding:10px;border-radius:16px}
+  h2{font-size:clamp(19px,4.8vw,25px);margin:5px 0}
+  .top,.actions{gap:5px}
+  button{min-height:44px;padding:4px 8px}
+  .cards{margin:7px 0;gap:5px}
+  .card{min-height:clamp(92px,22vw,145px);padding:4px}
+  .scene{margin:5px 0;padding:3px}
+  .scene&gt;.art{height:clamp(52px,14vw,85px);font-size:clamp(40px,10vw,65px)}
+  .scene .items .art{width:45px;height:45px;font-size:36px}
+  #feedback{margin:4px 0;min-height:1.5em}
+  footer{margin:10px 0 4px}
+}
 &lt;/style&gt;
 &lt;main&gt;
 &lt;header&gt;&lt;a href=&quot;#tanken-list&quot; target=&quot;_parent&quot; id=&quot;tankenBack&quot;&gt;‹ たんけんの いちらん&lt;/a&gt;&lt;span id=&quot;points&quot; aria-label=&quot;ごうけい てんすう&quot;&gt;&lt;/span&gt;&lt;/header&gt;
