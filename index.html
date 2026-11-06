@@ -166,22 +166,21 @@ progress{width:100%;accent-color:#407856;height:16px}.cards{display:grid;grid-te
 .moving{width:clamp(86px,19vw,160px)}
 .sample{font-size:clamp(48px,12vw,104px)}
 
-@media (orientation:portrait) {
-  main{padding:6px}
-  h1{font-size:clamp(24px,6vw,32px);margin:5px 0 1px}
-  .sub{margin:0 0 7px}
-  .panel{padding:10px;border-radius:16px}
-  h2{font-size:clamp(19px,4.8vw,25px);margin:5px 0}
-  .top,.actions{gap:5px}
-  button{min-height:44px;padding:4px 8px}
-  .cards{margin:7px 0;gap:5px}
-  .card{min-height:clamp(92px,22vw,145px);padding:4px}
-  .scene{margin:5px 0;padding:3px}
-  .scene&gt;.art{height:clamp(52px,14vw,85px);font-size:clamp(40px,10vw,65px)}
-  .scene .items .art{width:45px;height:45px;font-size:36px}
-  #feedback{margin:4px 0;min-height:1.5em}
-  footer{margin:10px 0 4px}
-}
+html{overflow:hidden}
+  .portrait main{padding:6px}
+  .portrait h1{font-size:clamp(24px,6vw,32px);margin:5px 0 1px}
+  .portrait .sub{margin:0 0 7px}
+  .portrait .panel{padding:10px;border-radius:16px}
+  .portrait h2{font-size:clamp(19px,4.8vw,25px);margin:5px 0}
+  .portrait .top,.portrait .actions{gap:5px}
+  .portrait button{min-height:44px;padding:4px 8px}
+  .portrait .cards{margin:7px 0;gap:5px}
+  .portrait .card{min-height:clamp(92px,22vw,145px);padding:4px}
+  .portrait .scene{margin:5px 0;padding:3px}
+  .portrait .scene&gt;.art{height:clamp(52px,14vw,85px);font-size:clamp(40px,10vw,65px)}
+  .portrait .scene .items .art{width:45px;height:45px;font-size:36px}
+  .portrait #feedback{margin:4px 0;min-height:1.5em}
+  .portrait footer{margin:10px 0 4px}
 &lt;/style&gt;
 &lt;main&gt;
 &lt;header&gt;&lt;a href=&quot;#tanken-list&quot; target=&quot;_parent&quot; id=&quot;tankenBack&quot;&gt;‹ たんけんの いちらん&lt;/a&gt;&lt;span id=&quot;points&quot; aria-label=&quot;ごうけい てんすう&quot;&gt;&lt;/span&gt;&lt;/header&gt;
@@ -435,8 +434,23 @@ get(&#x27;next&#x27;).onclick=()=&gt;{
  get(&#x27;game&#x27;).hidden=true;get(&#x27;end&#x27;).hidden=false;get(&#x27;done&#x27;).focus();say(&#x27;たんけん くりあ。よく できたね。&#x27;);
 };
 window.addEventListener(&#x27;pageshow&#x27;,showScore);
-const resize=()=&gt;{if(frameElement)frameElement.style.height=Math.ceil(document.body.getBoundingClientRect().height)+&#x27;px&#x27;};
-new ResizeObserver(resize).observe(document.body);resize();
+// The stage follows the outer screen, since its own height changes with each question.
+const screenOrientation=parent.matchMedia(&#x27;(orientation: portrait)&#x27;);
+const syncOrientation=()=&gt;document.documentElement.classList.toggle(&#x27;portrait&#x27;,screenOrientation.matches);
+screenOrientation.addEventListener(&#x27;change&#x27;,syncOrientation);
+window.addEventListener(&#x27;pagehide&#x27;,()=&gt;screenOrientation.removeEventListener(&#x27;change&#x27;,syncOrientation),{once:true});
+syncOrientation();
+const stageMain=document.querySelector(&#x27;main&#x27;);
+let resizeFrame=0;
+const resize=()=&gt;{
+ resizeFrame=0;
+ const height=Math.ceil(stageMain.getBoundingClientRect().height)+&#x27;px&#x27;;
+ if(frameElement&amp;&amp;frameElement.style.height!==height)frameElement.style.height=height;
+};
+new ResizeObserver(()=&gt;{
+ if(!resizeFrame)resizeFrame=requestAnimationFrame(resize);
+}).observe(stageMain);
+resize();
 showScore();
 &lt;/script&gt;
 &lt;/html&gt;
