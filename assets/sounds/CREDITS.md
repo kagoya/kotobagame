@@ -1,6 +1,6 @@
 # おととことば 音源の出典
 
-添付のZIPには出典・ライセンスの文書がありませんでした。ZIPの38本と追加添付の「小川のせせらぎ.mp3」は、[原田英語「英語の先生の玉手箱」の効果音集](https://www.haradaeigo.com/senseitool/sfx/)の配布ファイルとバイト単位で照合しました。「うま」には同サイトが配布するCC0のいななきを使用しています。以下の録音者・原音リンクは同サイトの[公開カタログ](https://www.haradaeigo.com/senseitool/assets/sfx/board/catalog.js)に基づきます。
+添付のZIPには出典・ライセンスの文書がありませんでした。ZIPの38本と追加添付の「小川のせせらぎ.mp3」は、[原田英語「英語の先生の玉手箱」の効果音集](https://www.haradaeigo.com/senseitool/sfx/)の配布ファイルとバイト単位で照合しました。これらの録音者・原音リンクは同サイトの[公開カタログ](https://www.haradaeigo.com/senseitool/assets/sfx/board/catalog.js)に基づきます。「うま」には、FreesoundのCC0試聴音源から10〜12秒を切り出して使用しています。
 
 配布元は対象の録音素材を [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)として案内しています。ゲーム用にはMP3をモノラル、32 kHz、48 kbpsで再エンコードしました。
 
@@ -12,7 +12,7 @@
 | どうぶつ | かえる | カエルケロケロ.mp3 | `frog.mp3` | [ez2000d](https://freesound.org/people/ez2000d/sounds/424356/) |
 | どうぶつ | にわとり | ニワトリコケコッコー.mp3 | `rooster.mp3` | [jsbarrett](https://freesound.org/people/jsbarrett/sounds/200339/) |
 | どうぶつ | とり | 小鳥のさえずり.mp3 | `bird.mp3` | [jaromarsalek](https://freesound.org/people/jaromarsalek/sounds/377212/) |
-| どうぶつ | うま | 原田英語「馬のいななき」 | `horse.mp3` | [craigsmith](https://freesound.org/people/craigsmith/sounds/437110/) |
+| どうぶつ | うま | G38-15-Perfect Horse Whinny（10〜12秒） | `horse.mp3` | [craigsmith](https://freesound.org/people/craigsmith/sounds/437110/) |
 | どうぶつ | ひつじ | 羊メェー.mp3 | `sheep.mp3` | [emilyws](https://freesound.org/people/emilyws/sounds/414541/) |
 | のりもの | きしゃ | 蒸気機関車シュッシュッポッポ.mp3 | `steam-train.mp3` | [lolamadeus](https://freesound.org/people/lolamadeus/sounds/179349/) |
 | のりもの | くるま | 車のエンジン始動.mp3 | `car.mp3` | [GiocoSound](https://freesound.org/people/GiocoSound/sounds/401558/) |
