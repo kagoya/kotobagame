@@ -1,6 +1,6 @@
 # おととことば 音源の出典
 
-添付のZIPには出典・ライセンスの文書がありませんでした。ZIPの38本と追加添付の「小川のせせらぎ.mp3」は、[原田英語「英語の先生の玉手箱」の効果音集](https://www.haradaeigo.com/senseitool/sfx/)の配布ファイルとバイト単位で照合しました。これらの録音者・原音リンクは同サイトの[公開カタログ](https://www.haradaeigo.com/senseitool/assets/sfx/board/catalog.js)に基づきます。「うま」には、FreesoundのCC0試聴音源から10〜12秒を切り出して使用しています。
+添付のZIPには出典・ライセンスの文書がありませんでした。採用中のZIP内の37本と追加添付の「小川のせせらぎ.mp3」は、[原田英語「英語の先生の玉手箱」の効果音集](https://www.haradaeigo.com/senseitool/sfx/)の配布ファイルとバイト単位で照合しました。これらの録音者・原音リンクは同サイトの[公開カタログ](https://www.haradaeigo.com/senseitool/assets/sfx/board/catalog.js)に基づきます。「うし」と「うま」には、FreesoundのCC0試聴音源を使用しています。「うま」は10〜12秒を切り出しています。
 
 配布元は対象の録音素材を [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)として案内しています。ゲーム用にはMP3をモノラル、32 kHz、48 kbpsで再エンコードしました。
 
@@ -8,7 +8,7 @@
 | --- | --- | --- | --- | --- |
 | どうぶつ | いぬ | 犬ワンワン.mp3 | `dog.mp3` | [SuperStudioBR](https://freesound.org/people/SuperStudioBR/sounds/180977/) |
 | どうぶつ | ねこ | 猫ニャー.mp3 | `cat.mp3` | [tuberatanka](https://freesound.org/people/tuberatanka/sounds/110011/) |
-| どうぶつ | うし | 牛モー.mp3 | `cow.mp3` | [spurioustransients](https://freesound.org/people/spurioustransients/sounds/513565/) |
+| どうぶつ | うし | Cow - Moo 3 - 96kHz.wav | `cow.mp3` | [JarredGibb](https://freesound.org/people/JarredGibb/sounds/233128/) |
 | どうぶつ | かえる | カエルケロケロ.mp3 | `frog.mp3` | [ez2000d](https://freesound.org/people/ez2000d/sounds/424356/) |
 | どうぶつ | にわとり | ニワトリコケコッコー.mp3 | `rooster.mp3` | [jsbarrett](https://freesound.org/people/jsbarrett/sounds/200339/) |
 | どうぶつ | とり | 小鳥のさえずり.mp3 | `bird.mp3` | [jaromarsalek](https://freesound.org/people/jaromarsalek/sounds/377212/) |
