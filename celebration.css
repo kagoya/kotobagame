@@ -1,0 +1,16 @@
+.celebration-overlay{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:10}
+.confetti{position:absolute;left:50%;bottom:0;font-size:clamp(18px,5vw,30px);animation:cracker-burst var(--flight) linear var(--delay) both}
+.hanamaru{position:absolute;left:50%;top:50%;width:clamp(80px,25vw,128px);transform:translate(-50%,-50%);filter:drop-shadow(0 3px 6px #582e3a45);animation:hanamaru-stamp 1.8s ease both}
+@keyframes cracker-burst{
+  0%{transform:translate(-50%,20px) scale(.5);opacity:0;animation-timing-function:cubic-bezier(.15,.72,.35,1)}
+  9%{opacity:1}
+  43%{transform:translate(calc(-50% + var(--apex-x)),var(--rise)) rotate(var(--turn)) scale(1);opacity:1;animation-timing-function:cubic-bezier(.6,0,.9,.68)}
+  100%{transform:translate(calc(-50% + var(--end-x)),35px) rotate(var(--end-turn));opacity:0}
+}
+@keyframes hanamaru-stamp{
+  0%{transform:translate(-50%,-50%) scale(.5);opacity:0}
+  17%{transform:translate(-50%,-50%) scale(1.08);opacity:1}
+  27%,78%{transform:translate(-50%,-50%) scale(1);opacity:1}
+  100%{opacity:0}
+}
+@media(prefers-reduced-motion:reduce){.celebration-overlay .confetti{display:none}.hanamaru{animation:none}}
