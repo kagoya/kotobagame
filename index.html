@@ -476,9 +476,38 @@ function storedTotalScore(){try{const n=Number(localStorage.getItem(SCORE_STORAG
 let totalScore=storedTotalScore();
 
 var homeStarFrame=0;
-function makeHomeStarLayout(score,width,height,blocked=[]){const count=Math.min(10000,Math.max(0,Math.floor(score)));if(!count||width<=0||height<=0)return [];let seed=(count*2654435761+Math.round(width)*17+Math.round(height))>>>0;const random=()=>{seed=(Math.imul(seed,1664525)+1013904223)>>>0;return seed/4294967296};const inside=(x,y,pad)=>blocked.some(r=>x>r.left-pad&&x<r.right+pad&&y>r.top-pad&&y<r.bottom+pad);let cell=Math.min(34,Math.sqrt(width*height/(count*1.5))),candidates=[];
-for(let attempt=0;attempt<100;attempt++){candidates=[];const cols=Math.max(1,Math.floor(width/cell)),rows=Math.max(1,Math.floor(height/cell)),dx=width/cols,dy=height/rows;for(let y=0;y<rows;y++)for(let x=0;x<cols;x++){const px=(x+.5)*dx,py=(y+.5)*dy;if(!inside(px,py,cell*.46))candidates.push({x:px,y:py})}if(candidates.length>=count)break;cell*=.88;}
-const size=Math.min(28,cell*.66);for(let i=candidates.length-1;i>0;i--){const j=Math.floor(random()*(i+1));[candidates[i],candidates[j]]=[candidates[j],candidates[i]]}return candidates.slice(0,count).map(p=>{const x=p.x+(random()-.5)*cell*.22,y=p.y+(random()-.5)*cell*.22;return {x,y,size}});}
+function makeHomeStarLayout(score,width,height,blocked=[]){
+  const count=Math.min(10000,Math.max(0,Math.floor(score)));
+  if(!count||width<=0||height<=0)return [];
+  let seed=(count*2654435761+Math.round(width)*17+Math.round(height))>>>0;
+  const random=()=>{seed=(Math.imul(seed,1664525)+1013904223)>>>0;return seed/4294967296};
+  const inside=(x,y,pad)=>blocked.some(r=>x>r.left-pad&&x<r.right+pad&&y>r.top-pad&&y<r.bottom+pad);
+  const minimumCell=Math.sqrt(width*height/40000);
+  let cell=Math.max(minimumCell,Math.min(34,Math.sqrt(width*height/(count*1.5))));
+  let candidates=[];
+  for(let attempt=0;attempt<8;attempt++){
+    candidates=[];
+    const cols=Math.max(1,Math.floor(width/cell)),rows=Math.max(1,Math.floor(height/cell));
+    const dx=width/cols,dy=height/rows;
+    for(let row=0;row<rows;row++)for(let col=0;col<cols;col++){
+      const x=(col+.5)*dx,y=(row+.5)*dy;
+      if(!inside(x,y,cell*.46))candidates.push({x,y});
+    }
+    if(candidates.length>=count||cell===minimumCell)break;
+    cell=Math.max(minimumCell,cell*.78);
+  }
+  const size=Math.min(28,cell*.66);
+  for(let i=candidates.length-1;i>0;i--){
+    const j=Math.floor(random()*(i+1));
+    [candidates[i],candidates[j]]=[candidates[j],candidates[i]];
+  }
+  const stars=candidates.slice(0,count).map(p=>({
+    x:p.x+(random()-.5)*cell*.22,y:p.y+(random()-.5)*cell*.22,size
+  }));
+  // On a crowded screen, let remaining stars sit behind the menu.
+  while(stars.length<count)stars.push({x:random()*width,y:random()*height,size});
+  return stars;
+}
 function queueHomeStars(){const canvas=$('homeStars');if(!canvas)return;const home=!$('homePage').hidden;canvas.hidden=!home;if(!home||typeof canvas.getContext!=='function')return;if(homeStarFrame)cancelAnimationFrame(homeStarFrame);homeStarFrame=requestAnimationFrame(()=>{homeStarFrame=0;drawHomeStars()});}
 function drawHomeStars(){const canvas=$('homeStars');if($('homePage').hidden||typeof canvas.getContext!=='function')return;const width=Math.max(1,document.documentElement.clientWidth||window.innerWidth),height=Math.ceil(Math.max(window.innerHeight,...Array.from(document.querySelectorAll('body>header,#homePage,.site-footer')).map(el=>el.getBoundingClientRect().bottom+window.scrollY))),ratio=Math.min(2,window.devicePixelRatio||1);canvas.width=Math.round(width*ratio);canvas.height=Math.round(height*ratio);canvas.style.width=width+'px';canvas.style.height=height+'px';const g=canvas.getContext('2d');if(!g)return;g.setTransform(ratio,0,0,ratio,0,0);g.clearRect(0,0,width,height);const blocked=Array.from(document.querySelectorAll('header,.home-intro,.home-menu,.site-footer')).map(el=>{const r=el.getBoundingClientRect();return {left:r.left-10,right:r.right+10,top:r.top+window.scrollY-10,bottom:r.bottom+window.scrollY+10}});const stars=makeHomeStarLayout(totalScore,width,height,blocked);const sprite=document.createElement('canvas');sprite.width=64;sprite.height=64;const brush=sprite.getContext('2d');if(!brush)return;brush.font='48px "Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",sans-serif';brush.textAlign='center';brush.textBaseline='middle';brush.fillText('⭐',32,33);g.globalAlpha=.88;for(const star of stars)g.drawImage(sprite,star.x-star.size/2,star.y-star.size/2,star.size,star.size);canvas.setAttribute('data-star-count',String(stars.length));}
 window.addEventListener('resize',queueHomeStars,{passive:true});window.addEventListener('load',queueHomeStars);
