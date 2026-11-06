@@ -1,50 +1,50 @@
 # おととことば 音源の出典
 
-添付のZIPには出典・ライセンスの文書がありませんでした。採用中のZIP内の37本と追加添付の「小川のせせらぎ.mp3」は、[原田英語「英語の先生の玉手箱」の効果音集](https://www.haradaeigo.com/senseitool/sfx/)の配布ファイルとバイト単位で照合しました。これらの録音者・原音リンクは同サイトの[公開カタログ](https://www.haradaeigo.com/senseitool/assets/sfx/board/catalog.js)に基づきます。「うし」と「うま」には、FreesoundのCC0試聴音源を使用しています。「うま」は10〜12秒を切り出しています。
+カードをめくると再生する40音の一覧です。「ゲームで再生するMP3」からゲームと同じ音を聞けます。「使用した配布音源」はゲーム用に変換する前に取得した音源、「録音者・原音」はFreesoundの元の録音ページです。
 
-配布元は対象の録音素材を [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)として案内しています。ゲーム用にはMP3をモノラル、32 kHz、48 kbpsで再エンコードしました。
+38音は[原田英語「英語の先生の玉手箱」の効果音集](https://www.haradaeigo.com/senseitool/sfx/)から取得しました。録音者と原音の対応は[配布元のカタログ](https://www.haradaeigo.com/senseitool/assets/sfx/board/catalog.js)に基づきます。「うし」と「うま」はFreesoundの試聴MP3を使用し、「うま」は元の音源の10〜12秒を切り出しました。
 
-| カテゴリ | ゲームのことば | 使用した素材 | ゲームのファイル | 録音者・原音（Freesound） |
+音素材は配布元で [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/deed.ja) と案内されています。ゲーム用にモノラル、32 kHz、48 kbpsのMP3へ変換しています。
+
+| カテゴリ | ゲームのことば | ゲームで再生するMP3 | 使用した配布音源 | 録音者・原音（Freesound） |
 | --- | --- | --- | --- | --- |
-| どうぶつ | いぬ | 犬ワンワン.mp3 | `dog.mp3` | [SuperStudioBR](https://freesound.org/people/SuperStudioBR/sounds/180977/) |
-| どうぶつ | ねこ | 猫ニャー.mp3 | `cat.mp3` | [tuberatanka](https://freesound.org/people/tuberatanka/sounds/110011/) |
-| どうぶつ | うし | Cow - Moo 3 - 96kHz.wav | `cow.mp3` | [JarredGibb](https://freesound.org/people/JarredGibb/sounds/233128/) |
-| どうぶつ | かえる | カエルケロケロ.mp3 | `frog.mp3` | [ez2000d](https://freesound.org/people/ez2000d/sounds/424356/) |
-| どうぶつ | にわとり | ニワトリコケコッコー.mp3 | `rooster.mp3` | [jsbarrett](https://freesound.org/people/jsbarrett/sounds/200339/) |
-| どうぶつ | とり | 小鳥のさえずり.mp3 | `bird.mp3` | [jaromarsalek](https://freesound.org/people/jaromarsalek/sounds/377212/) |
-| どうぶつ | うま | G38-15-Perfect Horse Whinny（10〜12秒） | `horse.mp3` | [craigsmith](https://freesound.org/people/craigsmith/sounds/437110/) |
-| どうぶつ | ひつじ | 羊メェー.mp3 | `sheep.mp3` | [emilyws](https://freesound.org/people/emilyws/sounds/414541/) |
-| のりもの | きしゃ | 蒸気機関車シュッシュッポッポ.mp3 | `steam-train.mp3` | [lolamadeus](https://freesound.org/people/lolamadeus/sounds/179349/) |
-| のりもの | くるま | 車のエンジン始動.mp3 | `car.mp3` | [GiocoSound](https://freesound.org/people/GiocoSound/sounds/401558/) |
-| のりもの | きゅうきゅうしゃ | 救急車のサイレン.mp3 | `ambulance.mp3` | [stereobrother](https://freesound.org/people/stereobrother/sounds/445344/) |
-| のりもの | ぱとかー | パトカーのサイレン.mp3 | `police-car.mp3` | [TitanKaempfer](https://freesound.org/people/TitanKaempfer/sounds/746302/) |
-| のりもの | ばいく | バイクの空ぶかし.mp3 | `motorcycle.mp3` | [golovlev.sound](https://freesound.org/people/golovlev.sound/sounds/632218/) |
-| のりもの | へりこぷたー | ヘリコプター.mp3 | `helicopter.mp3` | [bzamecnik](https://freesound.org/people/bzamecnik/sounds/348991/) |
-| のりもの | じてんしゃ | 自転車のベル.mp3 | `bicycle.mp3` | [newagesoup](https://freesound.org/people/newagesoup/sounds/383631/) |
-| のりもの | ふね | 船の汽笛ボー.mp3 | `ship.mp3` | [coalcon](https://freesound.org/people/coalcon/sounds/636075/) |
-| しぜん | あめ | 大雨ザーザー.mp3 | `rain.mp3` | [jmbphilmes](https://freesound.org/people/jmbphilmes/sounds/200272/) |
-| しぜん | かみなり | 落雷ドカーン.mp3 | `thunder.mp3` | [DaniloSFX](https://freesound.org/people/DaniloSFX/sounds/672776/) |
-| しぜん | かぜ | 強い風ビュー.mp3 | `wind.mp3` | [florianreichelt](https://freesound.org/people/florianreichelt/sounds/459981/) |
-| しぜん | なみ | 波ザザーン.mp3 | `waves.mp3` | [davidgtr1](https://freesound.org/people/davidgtr1/sounds/581487/) |
-| しぜん | しずく | 水滴ポチャン.mp3 | `water-drop.mp3` | [beskhu](https://freesound.org/people/beskhu/sounds/273870/) |
-| しぜん | はっぱ | 落ち葉を踏む.mp3 | `leaves.mp3` | [lolamadeus](https://freesound.org/people/lolamadeus/sounds/179339/) |
-| しぜん | ひ | たき火パチパチ.mp3 | `fire.mp3` | [kyles](https://freesound.org/people/kyles/sounds/637523/) |
-| しぜん | かわ | 小川のせせらぎ.mp3 | `stream.mp3` | [sound368](https://freesound.org/people/sound368/sounds/786172/) |
-| おうち | とけい | 時計のチクタク.mp3 | `clock.mp3` | [blukotek](https://freesound.org/people/blukotek/sounds/412751/) |
-| おうち | どあ | ドアを開けるギィ.mp3 | `door.mp3` | [Ryding](https://freesound.org/people/Ryding/sounds/125957/) |
-| おうち | ちゃいむ | 玄関チャイムピンポーン.mp3 | `doorbell.mp3` | [jwheeler91](https://freesound.org/people/jwheeler91/sounds/442280/) |
-| おうち | すいどう | 蛇口から水.mp3 | `tap.mp3` | [OwlStorm](https://freesound.org/people/OwlStorm/sounds/212177/) |
-| おうち | はさみ | ハサミで切る.mp3 | `scissors.mp3` | [aldenroth2](https://freesound.org/people/aldenroth2/sounds/272035/) |
-| おうち | そうじき | 掃除機.mp3 | `vacuum.mp3` | [Huminaatio](https://freesound.org/people/Huminaatio/sounds/159348/) |
-| おうち | でんわ | 電話の着信.mp3 | `phone.mp3` | [Ferrettomato](https://freesound.org/people/Ferrettomato/sounds/383439/) |
-| おうち | ふらいぱん | 揚げ物・焼くジュー.mp3 | `frying.mp3` | [applauseav](https://freesound.org/people/applauseav/sounds/239639/) |
-| がっき | たいこ | 和太鼓.mp3 | `taiko.mp3` | [Anuj_Shrestha1](https://freesound.org/people/Anuj_Shrestha1/sounds/486141/) |
-| がっき | すず | 鈴シャンシャン.mp3 | `bells.mp3` | [Zott820](https://freesound.org/people/Zott820/sounds/261006/) |
-| がっき | ぴあの | ピアノ和音.mp3 | `piano.mp3` | [Samanthamayirwin_music_](https://freesound.org/people/Samanthamayirwin_music_/sounds/705473/) |
-| がっき | ぎたー | ギター ジャーン.mp3 | `guitar.mp3` | [EntoClash](https://freesound.org/people/EntoClash/sounds/569289/) |
-| がっき | らっぱ | トランペット.mp3 | `trumpet.mp3` | [KhalDrogo12](https://freesound.org/people/KhalDrogo12/sounds/636485/) |
-| がっき | まらかす | マラカス.mp3 | `maracas.mp3` | [nathanmanaker](https://freesound.org/people/nathanmanaker/sounds/486950/) |
-| がっき | ぼんご | ボンゴ.mp3 | `bongo.mp3` | [KJose](https://freesound.org/people/KJose/sounds/620248/) |
-| がっき | ばいおりん | バイオリン.mp3 | `violin.mp3` | [sgossner](https://freesound.org/people/sgossner/sounds/374598/) |
-
-追加添付の「馬の鳴き声1.mp3」は効果音ラボの素材です。[効果音ラボの利用規約](https://soundeffect-lab.info/agreement/)では、効果音が重要な役割を果たすコンテンツを再配布として扱うため、本ゲームの公開版では上記のCC0音源を採用しました。
+| どうぶつ | いぬ | [dog.mp3](https://kagoya.github.io/kotobagame/assets/sounds/dog.mp3) | [犬（ワンワン）](https://www.haradaeigo.com/senseitool/assets/sfx/board/dog-barking.mp3) | [SuperStudioBR](https://freesound.org/people/SuperStudioBR/sounds/180977/) |
+| どうぶつ | ねこ | [cat.mp3](https://kagoya.github.io/kotobagame/assets/sounds/cat.mp3) | [猫（ニャー）](https://www.haradaeigo.com/senseitool/assets/sfx/board/cat-meow.mp3) | [tuberatanka](https://freesound.org/people/tuberatanka/sounds/110011/) |
+| どうぶつ | うし | [cow.mp3](https://kagoya.github.io/kotobagame/assets/sounds/cow.mp3) | [Freesound試聴MP3](https://cdn.freesound.org/previews/233/233128_4056007-hq.mp3) | [JarredGibb](https://freesound.org/people/JarredGibb/sounds/233128/) |
+| どうぶつ | かえる | [frog.mp3](https://kagoya.github.io/kotobagame/assets/sounds/frog.mp3) | [カエル（ケロケロ）](https://www.haradaeigo.com/senseitool/assets/sfx/board/frog-croak.mp3) | [ez2000d](https://freesound.org/people/ez2000d/sounds/424356/) |
+| どうぶつ | にわとり | [rooster.mp3](https://kagoya.github.io/kotobagame/assets/sounds/rooster.mp3) | [ニワトリ（コケコッコー）](https://www.haradaeigo.com/senseitool/assets/sfx/board/rooster-crow.mp3) | [jsbarrett](https://freesound.org/people/jsbarrett/sounds/200339/) |
+| どうぶつ | とり | [bird.mp3](https://kagoya.github.io/kotobagame/assets/sounds/bird.mp3) | [小鳥のさえずり](https://www.haradaeigo.com/senseitool/assets/sfx/board/songbird.mp3) | [jaromarsalek](https://freesound.org/people/jaromarsalek/sounds/377212/) |
+| どうぶつ | うま | [horse.mp3](https://kagoya.github.io/kotobagame/assets/sounds/horse.mp3) | [Freesound試聴MP3](https://cdn.freesound.org/previews/437/437110_2524442-hq.mp3) の10〜12秒 | [craigsmith](https://freesound.org/people/craigsmith/sounds/437110/) |
+| どうぶつ | ひつじ | [sheep.mp3](https://kagoya.github.io/kotobagame/assets/sounds/sheep.mp3) | [羊（メェー）](https://www.haradaeigo.com/senseitool/assets/sfx/board/sheep-baa.mp3) | [emilyws](https://freesound.org/people/emilyws/sounds/414541/) |
+| のりもの | きしゃ | [steam-train.mp3](https://kagoya.github.io/kotobagame/assets/sounds/steam-train.mp3) | [蒸気機関車（シュッシュッポッポ）](https://www.haradaeigo.com/senseitool/assets/sfx/board/steam-train.mp3) | [lolamadeus](https://freesound.org/people/lolamadeus/sounds/179349/) |
+| のりもの | くるま | [car.mp3](https://kagoya.github.io/kotobagame/assets/sounds/car.mp3) | [車のエンジン始動](https://www.haradaeigo.com/senseitool/assets/sfx/board/car-engine-start.mp3) | [GiocoSound](https://freesound.org/people/GiocoSound/sounds/401558/) |
+| のりもの | きゅうきゅうしゃ | [ambulance.mp3](https://kagoya.github.io/kotobagame/assets/sounds/ambulance.mp3) | [救急車のサイレン](https://www.haradaeigo.com/senseitool/assets/sfx/board/ambulance-siren.mp3) | [stereobrother](https://freesound.org/people/stereobrother/sounds/445344/) |
+| のりもの | ぱとかー | [police-car.mp3](https://kagoya.github.io/kotobagame/assets/sounds/police-car.mp3) | [パトカーのサイレン](https://www.haradaeigo.com/senseitool/assets/sfx/board/police-siren.mp3) | [TitanKaempfer](https://freesound.org/people/TitanKaempfer/sounds/746302/) |
+| のりもの | ばいく | [motorcycle.mp3](https://kagoya.github.io/kotobagame/assets/sounds/motorcycle.mp3) | [バイクの空ぶかし](https://www.haradaeigo.com/senseitool/assets/sfx/board/motorcycle-rev.mp3) | [golovlev.sound](https://freesound.org/people/golovlev.sound/sounds/632218/) |
+| のりもの | へりこぷたー | [helicopter.mp3](https://kagoya.github.io/kotobagame/assets/sounds/helicopter.mp3) | [ヘリコプター](https://www.haradaeigo.com/senseitool/assets/sfx/board/helicopter.mp3) | [bzamecnik](https://freesound.org/people/bzamecnik/sounds/348991/) |
+| のりもの | じてんしゃ | [bicycle.mp3](https://kagoya.github.io/kotobagame/assets/sounds/bicycle.mp3) | [自転車のベル](https://www.haradaeigo.com/senseitool/assets/sfx/board/bicycle-bell.mp3) | [newagesoup](https://freesound.org/people/newagesoup/sounds/383631/) |
+| のりもの | ふね | [ship.mp3](https://kagoya.github.io/kotobagame/assets/sounds/ship.mp3) | [船の汽笛（ボー）](https://www.haradaeigo.com/senseitool/assets/sfx/board/ship-horn.mp3) | [coalcon](https://freesound.org/people/coalcon/sounds/636075/) |
+| しぜん | あめ | [rain.mp3](https://kagoya.github.io/kotobagame/assets/sounds/rain.mp3) | [大雨（ザーザー）](https://www.haradaeigo.com/senseitool/assets/sfx/board/heavy-rain.mp3) | [jmbphilmes](https://freesound.org/people/jmbphilmes/sounds/200272/) |
+| しぜん | かみなり | [thunder.mp3](https://kagoya.github.io/kotobagame/assets/sounds/thunder.mp3) | [落雷（ドカーン）](https://www.haradaeigo.com/senseitool/assets/sfx/board/thunder-clap.mp3) | [DaniloSFX](https://freesound.org/people/DaniloSFX/sounds/672776/) |
+| しぜん | かぜ | [wind.mp3](https://kagoya.github.io/kotobagame/assets/sounds/wind.mp3) | [強い風（ビュー）](https://www.haradaeigo.com/senseitool/assets/sfx/board/strong-wind.mp3) | [florianreichelt](https://freesound.org/people/florianreichelt/sounds/459981/) |
+| しぜん | なみ | [waves.mp3](https://kagoya.github.io/kotobagame/assets/sounds/waves.mp3) | [波（ザザーン）](https://www.haradaeigo.com/senseitool/assets/sfx/board/ocean-waves.mp3) | [davidgtr1](https://freesound.org/people/davidgtr1/sounds/581487/) |
+| しぜん | しずく | [water-drop.mp3](https://kagoya.github.io/kotobagame/assets/sounds/water-drop.mp3) | [水滴（ポチャン）](https://www.haradaeigo.com/senseitool/assets/sfx/board/water-drop.mp3) | [beskhu](https://freesound.org/people/beskhu/sounds/273870/) |
+| しぜん | はっぱ | [leaves.mp3](https://kagoya.github.io/kotobagame/assets/sounds/leaves.mp3) | [落ち葉を踏む](https://www.haradaeigo.com/senseitool/assets/sfx/board/leaves-footsteps.mp3) | [lolamadeus](https://freesound.org/people/lolamadeus/sounds/179339/) |
+| しぜん | ひ | [fire.mp3](https://kagoya.github.io/kotobagame/assets/sounds/fire.mp3) | [たき火（パチパチ）](https://www.haradaeigo.com/senseitool/assets/sfx/board/campfire.mp3) | [kyles](https://freesound.org/people/kyles/sounds/637523/) |
+| しぜん | かわ | [stream.mp3](https://kagoya.github.io/kotobagame/assets/sounds/stream.mp3) | [小川のせせらぎ](https://www.haradaeigo.com/senseitool/assets/sfx/board/stream.mp3) | [sound368](https://freesound.org/people/sound368/sounds/786172/) |
+| おうち | とけい | [clock.mp3](https://kagoya.github.io/kotobagame/assets/sounds/clock.mp3) | [時計のチクタク](https://www.haradaeigo.com/senseitool/assets/sfx/board/clock-ticking.mp3) | [blukotek](https://freesound.org/people/blukotek/sounds/412751/) |
+| おうち | どあ | [door.mp3](https://kagoya.github.io/kotobagame/assets/sounds/door.mp3) | [ドアを開ける（ギィ）](https://www.haradaeigo.com/senseitool/assets/sfx/board/door-creak-open.mp3) | [Ryding](https://freesound.org/people/Ryding/sounds/125957/) |
+| おうち | ちゃいむ | [doorbell.mp3](https://kagoya.github.io/kotobagame/assets/sounds/doorbell.mp3) | [玄関チャイム（ピンポーン）](https://www.haradaeigo.com/senseitool/assets/sfx/board/doorbell-ding-dong.mp3) | [jwheeler91](https://freesound.org/people/jwheeler91/sounds/442280/) |
+| おうち | すいどう | [tap.mp3](https://kagoya.github.io/kotobagame/assets/sounds/tap.mp3) | [蛇口から水](https://www.haradaeigo.com/senseitool/assets/sfx/board/running-tap-water.mp3) | [OwlStorm](https://freesound.org/people/OwlStorm/sounds/212177/) |
+| おうち | はさみ | [scissors.mp3](https://kagoya.github.io/kotobagame/assets/sounds/scissors.mp3) | [ハサミで切る](https://www.haradaeigo.com/senseitool/assets/sfx/board/scissors-cutting.mp3) | [aldenroth2](https://freesound.org/people/aldenroth2/sounds/272035/) |
+| おうち | そうじき | [vacuum.mp3](https://kagoya.github.io/kotobagame/assets/sounds/vacuum.mp3) | [掃除機](https://www.haradaeigo.com/senseitool/assets/sfx/board/vacuum-cleaner.mp3) | [Huminaatio](https://freesound.org/people/Huminaatio/sounds/159348/) |
+| おうち | でんわ | [phone.mp3](https://kagoya.github.io/kotobagame/assets/sounds/phone.mp3) | [電話の着信](https://www.haradaeigo.com/senseitool/assets/sfx/board/phone-ring.mp3) | [Ferrettomato](https://freesound.org/people/Ferrettomato/sounds/383439/) |
+| おうち | ふらいぱん | [frying.mp3](https://kagoya.github.io/kotobagame/assets/sounds/frying.mp3) | [揚げ物・焼く（ジュー）](https://www.haradaeigo.com/senseitool/assets/sfx/board/frying-sizzle.mp3) | [applauseav](https://freesound.org/people/applauseav/sounds/239639/) |
+| がっき | たいこ | [taiko.mp3](https://kagoya.github.io/kotobagame/assets/sounds/taiko.mp3) | [和太鼓](https://www.haradaeigo.com/senseitool/assets/sfx/board/taiko-drum.mp3) | [Anuj_Shrestha1](https://freesound.org/people/Anuj_Shrestha1/sounds/486141/) |
+| がっき | すず | [bells.mp3](https://kagoya.github.io/kotobagame/assets/sounds/bells.mp3) | [鈴（シャンシャン）](https://www.haradaeigo.com/senseitool/assets/sfx/board/sleigh-bells.mp3) | [Zott820](https://freesound.org/people/Zott820/sounds/261006/) |
+| がっき | ぴあの | [piano.mp3](https://kagoya.github.io/kotobagame/assets/sounds/piano.mp3) | [ピアノ（和音）](https://www.haradaeigo.com/senseitool/assets/sfx/board/piano-chord.mp3) | [Samanthamayirwin_music_](https://freesound.org/people/Samanthamayirwin_music_/sounds/705473/) |
+| がっき | ぎたー | [guitar.mp3](https://kagoya.github.io/kotobagame/assets/sounds/guitar.mp3) | [ギター ジャーン](https://www.haradaeigo.com/senseitool/assets/sfx/board/guitar-strum.mp3) | [EntoClash](https://freesound.org/people/EntoClash/sounds/569289/) |
+| がっき | らっぱ | [trumpet.mp3](https://kagoya.github.io/kotobagame/assets/sounds/trumpet.mp3) | [トランペット](https://www.haradaeigo.com/senseitool/assets/sfx/board/trumpet.mp3) | [KhalDrogo12](https://freesound.org/people/KhalDrogo12/sounds/636485/) |
+| がっき | まらかす | [maracas.mp3](https://kagoya.github.io/kotobagame/assets/sounds/maracas.mp3) | [マラカス](https://www.haradaeigo.com/senseitool/assets/sfx/board/maracas.mp3) | [nathanmanaker](https://freesound.org/people/nathanmanaker/sounds/486950/) |
+| がっき | ぼんご | [bongo.mp3](https://kagoya.github.io/kotobagame/assets/sounds/bongo.mp3) | [ボンゴ](https://www.haradaeigo.com/senseitool/assets/sfx/board/bongo.mp3) | [KJose](https://freesound.org/people/KJose/sounds/620248/) |
+| がっき | ばいおりん | [violin.mp3](https://kagoya.github.io/kotobagame/assets/sounds/violin.mp3) | [バイオリン](https://www.haradaeigo.com/senseitool/assets/sfx/board/violin.mp3) | [sgossner](https://freesound.org/people/sgossner/sounds/374598/) |
