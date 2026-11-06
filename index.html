@@ -419,7 +419,7 @@ function checkAnswer(q){
  const scene=get(&#x27;scene&#x27;);
  const from=q.moving&amp;&amp;scene.querySelector(&#x27;.art&#x27;)?.getBoundingClientRect();
  const to=cards.find(card=&gt;Number(card.dataset.option)===q.answer[0]).querySelector(&#x27;.art&#x27;).getBoundingClientRect();
- solved=true;addPoint();chime(index===questions.length-1);drawScene(q);
+ solved=true;addPoint();chime(index===questions.length-1);drawScene(q);parent.kotobaTankenScore.celebrate();
  if(from&amp;&amp;!matchMedia(&#x27;(prefers-reduced-motion: reduce)&#x27;).matches){
   const holder=document.createElement(&#x27;div&#x27;);
   holder.innerHTML=artwork(q.moving.art);
@@ -630,7 +630,7 @@ $('fillSlots').addEventListener('dragover',e=>{const b=e.target.closest('[data-s
 $('fillSlots').addEventListener('drop',e=>{const b=e.target.closest('[data-slot]');if(!b||fillDone||fillBusy)return;e.preventDefault();const raw=e.dataTransfer.getData('text/plain');if(!/^\d+$/.test(raw))return;const i=Number(b.dataset.slot);if(fillAnswers[i])return;fillSelected=i;renderFill();chooseKana(Number(raw),$('fillChoices').querySelector('[data-kana="'+raw+'"]'))});
 $('fillHint').onclick=()=>{if(!sound){$('fillStatus').textContent='「おと あり」に すると きけるよ';return}speak(fillWord.name);$('fillStatus').textContent='よく きいて もじを さがしてね 👂'};
 $('fillSkip').onclick=()=>{newFill();tone('ok')};$('fillNext').onclick=()=>newFill();$('holesCount').onchange=()=>newFill();
-window.kotobaTankenScore={get:()=>Math.max(totalScore,storedTotalScore()),add:()=>addScore(1)};
+window.kotobaTankenScore={get:()=>Math.max(totalScore,storedTotalScore()),add:()=>addScore(1),celebrate:()=>showConfetti()};
 function routeGame(){const tanken=['#tanken','#tanken-kitchen','#tanken-home','#tanken-town'].includes(location.hash);const tankenList=location.hash==='#tanken-list';const frame=$('tankenFrame');$('tankenPage').hidden=!tanken;$('tankenList').hidden=!tankenList;$('brandHome').hidden=tanken;
 if(tanken&&frame.dataset.stage!==location.hash){frame.dataset.stage=location.hash;frame.srcdoc=$('tankenSource').content.textContent;}
 if(!tanken&&frame.hasAttribute('srcdoc')){delete frame.dataset.stage;frame.removeAttribute('srcdoc');}
