@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ことばずかん｜ことばゲーム</title>
+<link rel="icon" type="image/svg+xml" href="./favicon.svg">
+<link rel="stylesheet" href="./wordbook.css">
+<script src="./wordbook-data.js" defer></script><script src="./wordbook.js" defer></script><script src="./wordbook-page.js" defer></script>
+</head><body>
+<main>
+<a class="back" href="./#home">← あそびを えらぶ</a>
+<header><h1>ことばずかん</h1><p id="total" aria-live="polite"></p></header>
+<p class="intro">くりあして あつめた ことばだよ。えや ことばを おすと よみが きけるよ。</p>
+<section class="toolbar" aria-label="ずかんの しゅるい">
+<label for="category">しゅるい</label><select id="category"><option value="">ぜんぶ</option></select>
+<button id="deleteCategory" class="delete" disabled>この しゅるいを ぜんぶ けす</button>
+</section>
+<p id="status" role="status"></p>
+<div id="entries" class="entries"></div>
+<p id="empty" class="empty" hidden>まだ ことばが ないよ。げーむを くりあして あつめよう！</p>
+<details class="note"><summary>おとなの かたへ</summary><p>ことばはこのブラウザに保存されます。同じ意味のことばは1件にまとめ、見つけたゲームを記録します。削除したことばも、再びクリアすると登録されます。</p><p>しゅるい全体の削除と1件ずつの削除には確認画面が出ます。ブラウザのデータを消すと図鑑の記録も消えます。</p></details>
+<footer><a href="./#about">この あそびについて</a><span>© Kagoya · CC BY-SA 4.0</span></footer>
+</main></body></html>
